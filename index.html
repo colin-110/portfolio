@@ -3,176 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name | Portfolio</title>
-  <style>
-    :root {
-      --bg-color-light: #f0f0f0;
-      --text-color-light: #222;
-      --accent-color-light: #007acc;
-
-      --bg-color-dark: #121212;
-      --text-color-dark: #e0e0e0;
-      --accent-color-dark: #3399ff;
-
-      --transition-speed: 0.3s;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color-light);
-      color: var(--text-color-light);
-      transition: background-color var(--transition-speed), color var(--transition-speed);
-    }
-
-    body.dark {
-      background-color: var(--bg-color-dark);
-      color: var(--text-color-dark);
-    }
-
-    header {
-      padding: 2rem 1rem;
-      text-align: center;
-      background-color: var(--accent-color-light);
-      color: white;
-      transition: background-color var(--transition-speed);
-    }
-
-    body.dark header {
-      background-color: var(--accent-color-dark);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      font-style: italic;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: transparent;
-      margin-top: 1rem;
-      gap: 1.5rem;
-      font-weight: 600;
-    }
-
-    nav a {
-      color: inherit;
-      text-decoration: none;
-      font-size: 1.1rem;
-      padding: 0.3rem 0.6rem;
-      border-radius: 4px;
-      transition: background-color var(--transition-speed);
-    }
-
-    nav a:hover {
-      background-color: var(--accent-color-light);
-      color: white;
-    }
-
-    body.dark nav a:hover {
-      background-color: var(--accent-color-dark);
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      border-bottom: 2px solid var(--accent-color-light);
-      padding-bottom: 0.3rem;
-      margin-bottom: 1.2rem;
-      transition: border-color var(--transition-speed);
-    }
-
-    body.dark h2 {
-      border-color: var(--accent-color-dark);
-    }
-
-    /* Projects */
-    .project {
-      margin-bottom: 1.5rem;
-    }
-    .project h3 {
-      margin: 0 0 0.3rem 0;
-      font-size: 1.4rem;
-    }
-    .project h3 a {
-      color: var(--accent-color-light);
-      text-decoration: none;
-      transition: color var(--transition-speed);
-    }
-    body.dark .project h3 a {
-      color: var(--accent-color-dark);
-    }
-    .project p {
-      margin: 0;
-      line-height: 1.4;
-    }
-
-    /* Education */
-    .education-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .education-item {
-      flex: 1 1 300px;
-      background: rgba(0,0,0,0.05);
-      padding: 1rem 1.2rem;
-      border-radius: 6px;
-      transition: background-color var(--transition-speed);
-    }
-    body.dark .education-item {
-      background: rgba(255,255,255,0.1);
-    }
-    .education-item h3 {
-      margin-top: 0;
-    }
-    .education-item p {
-      margin: 0.3rem 0;
-    }
-
-    /* Skills */
-    ul.skills-list {
-      list-style-type: disc;
-      padding-left: 1.4rem;
-    }
-    ul.skills-list li {
-      margin-bottom: 0.3rem;
-    }
-
-    /* Dark mode toggle button */
-    .toggle-btn {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: var(--accent-color-light);
-      border: none;
-      color: white;
-      padding: 0.5rem 0.8rem;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background-color var(--transition-speed);
-      z-index: 1000;
-    }
-    body.dark .toggle-btn {
-      background: var(--accent-color-dark);
-    }
-  </style>
+  <title>Colin K Thomas | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <button class="toggle-btn" id="toggleThemeBtn">Dark Mode</button>
@@ -203,10 +35,8 @@
         <li>Robotic Process Automation (UiPath)</li>
         <li>Data Structures & Algorithms</li>
         <li>Embedded Systems: ESP32, Arduino, Sensors, Actuators</li>
-        
         <li>Operating Systems, Computer Architecture</li>
         <li>Database Systems</li>
-        
         <li>Android ROM Modding & Custom ROM Development</li>
       </ul>
     </section>
@@ -237,12 +67,10 @@
 
     <section id="projects" class="section">
       <h2>Projects</h2>
-
       <div class="project">
         <h3><a href="https://github.com/colin-110/mpu6050-servo-pid-controller.git" target="_blank" rel="noopener">MPU6050 DMP Based Balancing Robot</a></h3>
         <p>Implemented a self-balancing robot using an MPU6050 IMU and PID control on ESP32. Achieved stable balancing by tuning PID parameters and filtering sensor data.</p>
       </div>
-
 
       <div class="project">
         <h3><a href="https://github.com/colin-110/dualcode-balancing-linefollower-robot.git" target="_blank" rel="noopener">Balancing Platform on Line Following Robot</a></h3>
@@ -252,40 +80,11 @@
 
     <section id="contact" class="section">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:colinkthomas110@gmail.com.com">colinkthomas110@gmail.com</a></p>
+      <p>Email: <a href="mailto:colinkthomas110@gmail.com">colinkthomas110@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/colin-110" target="_blank" rel="noopener">github.com/colin-110</a></p>
-     
     </section>
   </main>
 
-  <script>
-    const toggleBtn = document.getElementById('toggleThemeBtn');
-    const body = document.body;
-
-    function setMode(isDark) {
-      if (isDark) {
-        body.classList.add('dark');
-        toggleBtn.textContent = 'Light Mode';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        body.classList.remove('dark');
-        toggleBtn.textContent = 'Dark Mode';
-        localStorage.setItem('theme', 'light');
-      }
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      const isDark = body.classList.contains('dark');
-      setMode(!isDark);
-    });
-
-    // Load saved theme
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setMode(true);
-    } else {
-      setMode(false);
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
