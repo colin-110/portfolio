@@ -94,7 +94,6 @@ body.dark h2 {
   border-color: var(--accent-color-dark);
 }
 
-/* Projects */
 .project {
   margin-bottom: 1.5rem;
 }
@@ -115,7 +114,6 @@ body.dark .project h3 a {
   line-height: 1.4;
 }
 
-/* Education */
 .education-list {
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +136,7 @@ body.dark .education-item {
   margin: 0.3rem 0;
 }
 
-/* Skills */
+
 ul.skills-list {
   list-style-type: disc;
   padding-left: 1.4rem;
@@ -147,7 +145,6 @@ ul.skills-list li {
   margin-bottom: 0.3rem;
 }
 
-/* Dark mode toggle button */
 .toggle-btn {
   position: fixed;
   top: 1rem;
